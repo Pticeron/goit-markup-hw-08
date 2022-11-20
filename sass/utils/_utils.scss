@@ -1,0 +1,39 @@
+body {
+    font-family: $primery_font;
+    color: $text_color;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: $primary_bcg_color;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 94px;
+}
+
+.padding {
+    padding-bottom: 94px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+

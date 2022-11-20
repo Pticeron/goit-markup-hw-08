@@ -1,0 +1,12 @@
+.logo {
+    font-family: $logo_font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    color: $akcent_color;
+
+    &--header {
+        color: $logo_color;
+    }
+
+}   

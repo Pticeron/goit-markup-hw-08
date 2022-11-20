@@ -1,0 +1,30 @@
+.compani-list {
+    display: flex;
+    gap: 30px;
+
+    &__icon {
+        width: 106px;
+        height: 60px;
+        fill: currentColor;
+    }
+}
+
+.compani-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: $icon_color;
+
+    transition: border-color 250ms $timing_function,
+    color 250ms $timing_function;
+
+    &:hover,
+    &:focus {
+        color: $akcent_color;
+        border-color: $akcent_color;
+    }
+}
