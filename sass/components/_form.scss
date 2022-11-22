@@ -1,33 +1,31 @@
 .footer-form {
-    display: flex;
     margin: 0;
-    gap: 12px;
 
     &__input {
-        display: block;
-        width: 358px;
-        padding: 15px;
-
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        color: rgba(255, 255, 255, 0.6);
-        background: #2F303A;
+            display: block;
+            width: 358px;
+            padding: 15px;
+    
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            color: rgba(255, 255, 255, 0.6);
+            background: #2F303A;
         }
-}
-
-.button--footer {
-    position: relative;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    padding-right: 28px;
-    width: 200px;
-    height: 50px;
-}
-
-.footer-telegram {
-    position: absolute;
-    right: 28px;
-    bottom: 13px;
-}
+    }
+    
+    .button--footer {
+        position: relative;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        padding-right: 28px;
+        width: 200px;
+        height: 50px;
+    }
+    
+    .footer-telegram {
+        position: absolute;
+        right: 28px;
+        bottom: 13px;
+    }

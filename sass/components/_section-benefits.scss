@@ -1,39 +1,28 @@
-.benefits-item {
-    display: flex;
-}
-
-.item+.item {
-    margin-left: 30px;
-}
-
 .item__icon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
     width: 270px;
     height: 120px;
     margin: 0;
     background-color: $secondary_bcg_color;
     border-radius: 4px;
-}
-
-.item__picture {
+    }
+    
+    .item__picture {
     width: 70px;
     height: 70px;
-}
-
-.title-three {
+    
+    }
+    
+    .title-three {
     margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.142;
     text-transform: uppercase;
-
+    text-align: center;
+    
     &__text {
         line-height: 1.714;
         color: $secondary_text_color;
+        }
     }
-}
-

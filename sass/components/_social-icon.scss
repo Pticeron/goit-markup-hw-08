@@ -21,7 +21,7 @@
     color: $icon_color;
 
     transition: background-color 250ms $timing_function,
-    color 250ms $timing_function;
+        color 250ms $timing_function;
 
     &:hover,
     &:focus {
@@ -30,5 +30,3 @@
     }
 
 }
-
-    
