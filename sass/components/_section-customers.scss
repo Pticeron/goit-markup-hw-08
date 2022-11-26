@@ -1,6 +1,6 @@
 .compani-list {
     display: flex;
-    flex-wrap: wrap;
+    gap: 30px;
 
     &__icon {
         width: 106px;
@@ -20,7 +20,7 @@
     color: $icon_color;
 
     transition: border-color 250ms $timing_function,
-        color 250ms $timing_function;
+    color 250ms $timing_function;
 
     &:hover,
     &:focus {

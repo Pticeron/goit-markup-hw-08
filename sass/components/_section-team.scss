@@ -1,6 +1,13 @@
 .section--team {
     background-color: $secondary_bcg_color;
+    padding-top: 94px;
 }
+
+.team {
+    display: flex;
+    gap: 30px;
+}
+
 
 .team__card {
     background-color: $secondary_akcent_color;
@@ -29,4 +36,5 @@
         color: $secondary_text_color;
     }
 }
+
 

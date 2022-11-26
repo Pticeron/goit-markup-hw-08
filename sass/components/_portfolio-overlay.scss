@@ -1,0 +1,37 @@
+.card-over {
+    position: relative;
+    overflow: hidden;
+
+    &__text {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 1;
+
+        padding: 61px 24px 65px 24px;
+        display: block;
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: 0.03em;
+        color: $secondary_akcent_color;
+        
+    } 
+}
+
+.card-over__boxes {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(33, 150, 243, 0.9);
+    
+    transform: translateY(100%);
+    transition: transform 250ms $timing_function;
+
+    .boxes__card:hover & {
+        transform: translateY(0);
+    }
+
+}

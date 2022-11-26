@@ -14,9 +14,38 @@ img {
 }
 
 .container {
-    
     margin: 0 auto;
     padding: 0 15px;
+
+    @media screen and (min-width: $mobile) {
+            width: $mobile;
+        }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        }
+
+    @media  screen and (min-width: $desktop) {
+        width: $desktop; 
+    }
+}
+
+.section {
+    padding-top: 60px;
+
+
+    @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    }
+}
+
+.padding {
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: $desktop) {
+    padding-bottom: 94px;
+    }
+    
 }
 
 .section-title {
@@ -27,3 +56,5 @@ img {
     letter-spacing: 0.03em;
     text-align: center;
 }
+
+
