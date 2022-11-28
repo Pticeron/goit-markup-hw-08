@@ -6,9 +6,14 @@
     transition: transform 250ms $timing_function,
         box-shadow 250ms $timing_function;
 
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+
+    @media screen and (min-width: $desktop) {
     width: 528px;
     height: 581px;
-    padding: 40px;
+    }
 
     color: $text_color;
     background-color: $secondary_akcent_color;
