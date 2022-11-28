@@ -1,11 +1,23 @@
 .section--team {
     background-color: $secondary_bcg_color;
-    padding-top: 94px;
+    
 }
 
 .team {
+    
+
+    @media screen  and (min-width: $tablet) {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    margin: -15px;
+    }
+
+}
+
+.team__thumb {
+    @media screen and (max-width: 1199px) {
+    width: 100%;
+    }
 }
 
 
@@ -13,6 +25,21 @@
     background-color: $secondary_akcent_color;
     box-shadow: $card_shadow;
     border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+            }
+        }
+    
+        @media screen and (min-width: $tablet) {
+        flex-basis: calc(100% / 2 - 2 * 15px);
+        margin: 15px;
+        }
+
+        @media screen and (min-width: $desktop) {
+        flex-basis: calc(100% / 4 - 2 * 15px);
+        }
 }
 
 .team-content {

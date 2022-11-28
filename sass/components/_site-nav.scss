@@ -1,27 +1,56 @@
 .site-nav {
+    @media screen and (max-width: 767px) {
+    display: none;
+    }
+    
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-left: 87px;
+
+    @media screen and (min-width: $tablet) {
+    margin-right: 96px;
+    }
+        
+    @media screen and(min-width: $desktop) {
     margin-left: 93px;
+    }
 }
-.site-nav__item:not(:last-child),
-.site-contacts__item:not(:last-child) {
+
+
+.site-nav__item:not(:last-child){
     margin-right: 50px;
+}
+
+
+.site-contacts__item:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+    }
 }
 
 .site-contacts__item {
     font-weight: 500;
-        font-size: 14px;
-        line-height: 1.142;
-        letter-spacing: 0.02em;
-        color: $secondary_text_color;
+    font-size: 12px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: $secondary_text_color;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 10px;
+        
+    }
+
+    @media screen and(min-width: $desktop) {
+    font-size: 14px;
+    }
 }
 
 .site-nav__link {
     position: relative;
 
     font-weight: 500;
-    font-size: 14px;
+    
     line-height: 1.142;
     letter-spacing: 0.02em;
     color: $text_color;
@@ -52,20 +81,43 @@
 }
 
 .site-contacts {
+    @media screen and (max-width: 767px) {
+    display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+
+        
+    }
+
+    
+    @media screen and(min-width: $desktop) {
     display: flex;
     margin-left: auto;
     align-items: center;
+    }
 }
 
 .site-contacts__link {
+    @media screen and (min-width: 767px) {
+    display: block;
+    margin: 0 auto;
+    }
+
+    @media screen and(min-width: $desktop) {
     display: flex;
     align-items: center;
+    }
 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.142;
     letter-spacing: 0.02em;
     color: $secondary_text_color;
+
+    @media screen and(min-width: $desktop) {
+        font-size: 14px;
+    }
 
     transition: color 250ms $timing_function;
 
@@ -76,14 +128,26 @@
 }
 
 .site-contacts__icon {
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+
+    @media screen and(min-width: $desktop) {
     margin-right: 10px;
     width: 16px;
     height: 12px;
+    }
+
     fill: currentColor;
 
     &--tel {
         width: 10px;
-        height: 16px;
+        height: 14px;
+
+    @media screen and(min-width: $desktop) {
+    width: 10px;
+    height: 16px;
+        }
 
     }
 }
