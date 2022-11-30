@@ -55,8 +55,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
-    background-color: #3f51b5;
+    padding: 48px 40px;
+    background-color: $secondary_akcent_color;
     z-index: 999;
 
     transform: translateX(100%);
@@ -78,11 +78,73 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-bottom: 302px;
 }
 
 .mobile-menu .link {
     display: block;
     padding: 10px;
-    color: #fff;
+    
     text-decoration: none;
+    font-family: $primery_font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    
+    color: $text_color;
+
+}
+
+.link.link--current {
+    color: $akcent_color;
+}
+
+.mobile-contakt {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
+
+}
+
+.mobile-social {
+    display: flex;
+    gap: 20px;
+
+}
+
+.mobile-social__link {
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+}
+
+.mobile-contakt__tel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+
+}
+
+.mobile-contakt__mailto {
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
 }
