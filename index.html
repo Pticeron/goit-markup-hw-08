@@ -58,10 +58,8 @@
           </li>
         </ul>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"></path>
+          <svg width="24" height="24"> 
+          <use href="./images/symbol-defs.svg#icon-menu-burger"></use>
           </svg>
         </button>
       </div>
@@ -167,11 +165,18 @@
           <ul class="team list">
             <li class="team__card">
               <div class="team__thumb">
-                <img
-                  src="./images/Dem'yanenko.jpg"
-                  alt="Ігор Дем'яненко"
-                  width="270"
-                />
+                <img srcset="./images/teams/img_450.mb.jpg 450w,
+                ./images/teams/img_900.mb.jpg 900w,
+                ./images/teams/img_738.tb.jpg 738w,
+                ./images/teams/img_1476.tb.jpg 1476w,
+                ./images/teams/img_270.ds.jpg 270w,
+                ./images/teams/img_540.ds.jpg 540w"
+                
+                src="./images/teams/img_450.mb.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                width="450" height="460"
+                alt="Product Designer" />
+
               </div>
 
               <div class="team-content">
@@ -222,7 +227,17 @@
 
             <li class="team__card">
               <div class="team-thumb">
-                <img src="./images/Repina.jpg" alt="Ольга Рєпіна" width="270" />
+                <img srcset="./images/teams/img_450.mb1.jpg 450w,
+                    ./images/teams/img_900.mb1.jpg 900w,
+                    ./images/teams/img_738.tb1.jpg 738w,
+                    ./images/teams/img_1476.tb1.jpg 1476w,
+                    ./images/teams/img_270.ds1.jpg 270w,
+                    ./images/teams/img_540.ds1.jpg 540w" 
+
+                    src="./images/teams/img_450.mb1.jpg"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  width="450" height="460"
+                  alt="Frontend Developer" />
               </div>
 
               <div class="team-content">
@@ -264,11 +279,17 @@
 
             <li class="team__card">
               <div class="team-thumb">
-                <img
-                  src="./images/Tarasov.jpg"
-                  alt="Микола Тарасов"
-                  width="270"
-                />
+                <img srcset="./images/teams/img_450.mb2.jpg 450w,
+                ./images/teams/img_900.mb2.jpg 900w,
+                ./images/teams/img_738.tb2.jpg 738w,
+                ./images/teams/img_1476.tb2.jpg 1476w,
+                ./images/teams/img_270.ds2.jpg 270w,
+                ./images/teams/img_540.ds2.jpg 540w" 
+
+                src="./images/teams/img_450.mb1.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                width="450" height="460"
+                  alt="Marketing" />
               </div>
 
               <div class="team-content">
@@ -311,11 +332,17 @@
 
             <li class="team__card">
               <div class="team-thumb">
-                <img
-                  src="./images/Yermakov.jpg"
-                  alt="Михайло Єрмаков"
-                  width="270"
-                />
+                <img srcset="./images/teams/img_450.mb3.jpg 450w,
+                ./images/teams/img_900.mb3.jpg 900w,
+                ./images/teams/img_738.tb3.jpg 738w,
+                ./images/teams/img_1476.tb3.jpg 1476w,
+                ./images/teams/img_270.ds3.jpg 270w,
+                ./images/teams/img_540.ds3.jpg 540w" 
+
+                src="./images/teams/img_450.mb1.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                width="450" height="460"
+                alt="UI Designer" />
               </div>
 
               <div class="team-content">
@@ -567,10 +594,8 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-          <path fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path>
+        <svg width="24px" height="24px">
+          <use href="./images/symbol-defs.svg#icon-close-burger"></use>
         </svg>
       </button>
     
