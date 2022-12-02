@@ -1,8 +1,15 @@
 .button-select {
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
+    margin-right: 124px;
+
+    @media screen and (min-width: $tablet) {
     justify-content: center;
     margin-bottom: 50px;
-    gap: 8px;
+    }
+    
 
     &__card {
         display: inline-block;

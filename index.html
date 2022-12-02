@@ -142,15 +142,32 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="ofers-item list">
             <li class="item">
-              <img src="./images/box-1.jpg" alt="Верстка" width="370" />
+              <img srcset="
+                  ./images/details/img_370.ds.jpg 370w,
+                  ./images/details/img_740.ds.jpg 740w,
+                  " 
+                  src="./images/details/img_370.ds.jpg"
+                sizes="(min-width: 1200px) 370px, 100vw" width="370" height="294"
+                alt="Десктопні додатки" />
+              
               <p class="item__above">Десктопні додатки</p>
             </li>
             <li class="item">
-              <img src="./images/box-2.jpg" alt="Стилізація" width="370" />
+              <img srcset="
+                  ./images/details/img_370.ds-1.jpg 370w,
+                  ./images/details/img_740.ds-1.jpg 740w,
+                  " 
+                src="./images/details/img_370.ds-1.jpg" sizes="(min-width: 1200px) 370px, 100vw" width="370"
+                height="294" alt="Мобільні додатки" />
               <p class="item__above">Мобільні додатки</p>
             </li>
             <li class="item">
-              <img src="./images/box-3.jpg" alt="Адаптація" width="370" />
+              <img srcset="
+                ./images/details/img_370.ds-2.jpg 370w,
+                ./images/details/img_740.ds-2.jpg 740w,
+                " 
+                src="./images/details/img_370.ds-2.jpg" sizes="(min-width: 1200px) 370px, 100vw" width="370"
+                height="294" alt="Дизайнерські рішення" />
               <p class="item__above">Дизайнерські рішення</p>
             </li>
           </ul>
