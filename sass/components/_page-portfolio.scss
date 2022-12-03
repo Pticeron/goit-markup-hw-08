@@ -7,35 +7,31 @@
     margin: -15px;
     }
 
-
     @media screen and (min-width: $desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
     
-    margin-left: -30px;
-    margin-top: -30px;
-    
-        &__top {
+
+
+    &__top {
 
     @media screen and (min-width: $tablet) {
     flex-basis: calc(100% / 2 - 2 * 15px);
     margin: 15px;
-    }
+    } 
 
     @media screen and (min-width: $desktop) {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-    }
+    flex-basis: calc((100% - 6 * 15px) / 3);
     
+    }
 }
 }
 
 .boxes__card {
     display: block;
 
+    
     transition: box-shadow 250ms $timing_function;
 
     &:hover,
@@ -51,6 +47,11 @@
     padding: 20px 24px;
     border: 1px solid $card_bcg;
 
+    @media screen and (max-width: 1199px) {
+    padding-bottom: 56px;
+    }
+
+    
     &__title {
         margin-bottom: 0;
         font-weight: 700;
@@ -68,4 +69,9 @@
         color: $secondary_text_color;
     }
 }
+
+.card-content--mix {
+@media screen and (max-width: 1199px) {
+        padding-bottom: 20px;
+    }
 }
