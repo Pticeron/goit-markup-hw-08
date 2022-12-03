@@ -1,9 +1,16 @@
 .header {
     border-bottom: 1px solid $card_bcg;
+    height: 60px;
+    
 }
 
 .header-nav {
     display: flex;
-    align-items: center;
     
+}
+
+.container--mine-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 11px;
 }

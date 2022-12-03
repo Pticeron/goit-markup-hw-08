@@ -4,8 +4,6 @@
     }
     
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     margin-left: 87px;
 
     @media screen and (min-width: $tablet) {
@@ -85,9 +83,11 @@
     display: none;
     }
 
-    @media screen and (min-width: $tablet) {
-
-        
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;       
     }
 
     

@@ -32,6 +32,7 @@ img {
 
 .section {
     padding-top: 60px;
+    padding-bottom: 60px;
 
 
     @media screen and (min-width: $desktop) {
@@ -40,8 +41,7 @@ img {
 }
 
 .padding {
-    padding-bottom: 60px;
-    
+        
     @media screen and (min-width: $desktop) {
     padding-bottom: 94px;
     }

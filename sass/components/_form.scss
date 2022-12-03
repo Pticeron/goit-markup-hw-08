@@ -1,3 +1,4 @@
+
 .footer-form {
 
     @media screen and (min-width: $desktop) {
@@ -9,12 +10,14 @@
 
     &__input {
         display: block;
-        min-width: 450px;
+        width: 100%;
+        max-width: 450px;
         padding: 15px;
 
-        @media screen and (min-width: $tablet) {
-        margin: 0 auto; 
-        }
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+                margin: 0 auto;
+                width: 450px;
+            }
 
         @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
@@ -42,6 +45,13 @@
     height: 50px;
     background-color: $akcent_color;
     color: $primary_bcg_color;
+    border: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+
 }
 
 .footer-telegram {
