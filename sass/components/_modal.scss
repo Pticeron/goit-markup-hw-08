@@ -6,9 +6,12 @@
     transition: transform 250ms $timing_function,
         box-shadow 250ms $timing_function;
 
-    width: 450px;
-    height: 609px;
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
     padding: 40px;
+    overflow: scroll;
 
     @media screen and (min-width: $desktop) {
     width: 528px;

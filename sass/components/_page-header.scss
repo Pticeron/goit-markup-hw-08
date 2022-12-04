@@ -1,7 +1,5 @@
 .header {
-    border-bottom: 1px solid $card_bcg;
-    height: 60px;
-    
+    border-bottom: 1px solid $card_bcg;   
 }
 
 .header-nav {
@@ -12,5 +10,4 @@
 .container--mine-nav {
     display: flex;
     align-items: center;
-    margin-top: 11px;
 }
