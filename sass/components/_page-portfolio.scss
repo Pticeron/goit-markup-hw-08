@@ -16,6 +16,13 @@
 
     &__top {
 
+        @media screen and (max-width: 767px) {
+        &:not(:first-child) {
+        margin-top: 30px;
+            }
+        }
+
+        
     @media screen and (min-width: $tablet) {
     flex-basis: calc(100% / 2 - 2 * 15px);
     margin: 15px;
@@ -23,7 +30,6 @@
 
     @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 6 * 15px) / 3);
-    
     }
 }
 }
@@ -46,8 +52,9 @@
 .card-content {
     padding: 20px 24px;
     border: 1px solid $card_bcg;
+    
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
     padding-bottom: 56px;
     }
 
@@ -71,7 +78,7 @@
 }
 
 .card-content--mix {
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: $tablet) {
         padding-bottom: 20px;
     }
 }
